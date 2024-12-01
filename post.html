@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Website</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="home.html" class="logo"><h3><span class="spa">B</span>log<span>.</span></h3></a>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="my-posts.html">My Posts</a></li>
+                <li><a href="add-post.html">Upload Post</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <div class="nav-profile">
+                        <a href="sign-up.html"><img id="profile-img" src="Phoebe.png" class="profile-img"></a>
+                    </div>
+                </li>
+            </ul> 
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i> 
+        </div>
+    </nav>
+
+
+    <section class="single-post">
+        <div class="container single-container">
+            <h2 class="clr">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+            <div class="post-profile">
+                <div class="post-profile-img">
+                    <img src="Lara.png">
+                </div>
+                <div class="post-profile-info">
+                    <h5 class="clr">Phoebe Spengler</h5>
+                    <small>August 14, 2024 - 9:02PM</small>
+                </div>
+            </div>
+ 
+            <div class="single-thumb">
+                <img src="graphy.png" alt="">
+            </div>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, maxime accusantium. Maxime velit laboriosam soluta, ducimus, totam maiores rerum veniam non reprehenderit labore corporis fuga molestias blanditiis illum doloremque ex.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, maxime accusantium. Maxime velit laboriosam soluta, ducimus, totam maiores rerum veniam non reprehenderit labore corporis fuga molestias blanditiis illum doloremque ex.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, maxime accusantium. Maxime velit laboriosam soluta, ducimus, totam maiores rerum veniam non reprehenderit labore corporis fuga molestias blanditiis illum doloremque ex.</p>
+
+            <div class="comment-section1">
+                <button class="like1" id="likeBtn"><i class="fa-regular fa-heart"></i></button>
+                <div id="likeCountDisplay">0</div>
+                <button class="like1" id="replyBtn"><i class="fa-regular fa-comment"></i></button>
+                <div id="commentCountDisplay">0</div>
+                <button class="like1" id="shareBtn"><i class="fa-solid fa-share"></i></button>
+            </div>
+
+
+            <div class="modal-overlay" id="modalOverlay">
+                <div class="popup-container">
+                    <div id="commentsList" class="comments-list"></div>
+                    <div class="form-wrapper">
+                        <form class="comment" id="newCommentForm">
+                            <input type="text" placeholder="Comment" class="comment-input" id="commentTextarea"></input>
+                            <button class="submit" type="submit"><i class="fa-regular fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="social">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <div class="container foot-ontainer">
+            <article>
+                <h4>Categories</h4>
+                <ul>
+                    <li><a>Discovery</a></li>
+                    <li><a>Wild Life</a></li>
+                    <li><a>Food</a></li>
+                    <li><a>Sports</a></li>
+                    <li><a>Travel</a></li>
+                    <li><a>Music</a></li>
+                    <li><a>Photography</a></li>
+                    <li><a>Fitness</a></li>
+                    <li><a>World</a></li>
+                    <li><a>Art</a></li>
+                    <li><a>Science & Tech</a></li>
+                    <li><a>Pets</a></li>
+                    </ul>
+                </ul>
+            </article>
+
+            <article>
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="">Online Support</a></li>
+                    <li><a href="">Email</a></li>
+                    <li><a href="">Phone</a></li>
+                    <li><a href="">Social Media</a></li>
+                </ul>
+            </article>
+
+            <article>
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </article>
+
+        </div>
+        <div class="copyryt"><pre>Conditions of Use     Privacy Notice
+Copyright &copy; 2024, Blog.</pre></div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="post.js"></script>
+</body>
+</html>

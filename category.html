@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Website</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="home.html" class="logo"><h3><span class="spa">B</span>log<span>.</span></h3></a>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="my-posts.html">My Posts</a></li>
+                <li><a href="add-post.html">Upload Post</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <div class="nav-profile">
+                        <a href="sign-up.html"><img id="profile-img" src="Phoebe.png" class="profile-img"></a>
+                    </div>
+                </li>
+            </ul> 
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i> 
+        </div>
+    </nav>
+
+<!-- ----------------------------------Category Pg-------------------------------------- -->
+
+    <section class="Category-title">
+        <h2>Category Title</h2>
+    </section>
+
+
+    <section class="post">
+        <div class="post-container container">
+
+            <article class="post1">
+                <div class="thumbnail">
+                    <img src="Lara.png" alt="">
+                </div>
+                <div class="post-info">
+                    <a href="post.html" class="category">Wild Life</a>
+                    <h3 class="post-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
+                    <p class="post-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis assumenda velit reprehenderit nemo? Perferendis, distinctio corrupti cum nemo tempora illo consequuntur, velit eum tenetur quisquam, inventore nam. Quod, officia adipisci?
+                    Ut doloribus eveniet ipsa dolorem eligendi ea excepturi repudiandae est deleniti, blanditiis aliquid architecto enim velit maxime ad veritatis possimus vitae quaerat temporibus illum, dolores vero sapiente aut? </p>
+                     
+                    <div class="post-profile">
+                        <div class="post-profile-img">
+                            <img src="arya1.png">
+                        </div>
+                        <div class="post-profile-info">
+                            <h5>Arya Stark</h5>
+                            <small>October 20, 2024 - 7:22PM</small>
+                        </div>
+                    </div>
+                </div>
+
+<!-- ---------------------------------Comment Box------------------------------------- -->
+              
+                <div class="comment-section">
+                    <button class="like" id="likeBtn"><i class="fa-regular fa-heart"></i></button>
+                    <div id="likeCountDisplay">0</div>
+                    <button class="like" id="replyBtn"><i class="fa-regular fa-comment"></i></button>
+                    <div id="commentCountDisplay">0</div>
+                    <button class="like" id="shareBtn"><i class="fa-solid fa-share"></i></button>
+                </div>
+
+
+                <div class="modal-overlay" id="modalOverlay">
+                    <div class="popup-container">
+                        <div id="commentsList" class="comments-list"></div>
+                        <div class="form-wrapper">
+                            <form class="comment" id="newCommentForm">
+                                <input type="text" placeholder="Comment" class="comment-input" id="commentTextarea"></input>
+                                <button class="submit" type="submit"><i class="fa-regular fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="post1">
+                <div class="thumbnail">
+                    <img src="graphy.png" alt="">
+                </div>
+                <div class="post-info">
+                    <a href="post.html" class="category">Photography</a>
+                    <h3 class="post-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
+                    <p class="post-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis assumenda velit reprehenderit nemo? Perferendis, distinctio corrupti cum nemo tempora illo consequuntur, velit eum tenetur quisquam, inventore nam. Quod, officia adipisci?
+                    Ut doloribus eveniet ipsa dolorem eligendi ea excepturi repudiandae est deleniti, blanditiis aliquid architecto enim velit maxime ad veritatis possimus vitae quaerat temporibus illum, dolores vero sapiente aut? </p>
+                    
+                    <div class="post-profile">
+                        <div class="post-profile-img">
+                            <img src="sn.png">
+                        </div>
+                        <div class="post-profile-info">
+                            <h5>John Snow</h5>
+                            <small>August 14, 2024 - 9:02PM</small>
+                        </div>
+                    </div>
+                </div>
+
+<!-- ---------------------------------Comment Box------------------------------------- -->
+              
+                <div class="comment-section">
+                    <button class="like" id="likeBtn"><i class="fa-regular fa-heart"></i></button>
+                    <div id="likeCountDisplay">0</div>
+                    <button class="like" id="replyBtn"><i class="fa-regular fa-comment"></i></button>
+                    <div id="commentCountDisplay">0</div>
+                    <button class="like" id="shareBtn"><i class="fa-solid fa-share"></i></button>
+                </div>
+
+
+                <div class="modal-overlay" id="modalOverlay">
+                    <div class="popup-container">
+                        <div id="commentsList" class="comments-list"></div>
+                        <div class="form-wrapper">
+                            <form class="comment" id="newCommentForm">
+                                <input type="text" placeholder="Comment" class="comment-input" id="commentTextarea"></input>
+                                <button class="submit" type="submit"><i class="fa-regular fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="post1">
+                <div class="thumbnail">
+                    <img src="travel.png" alt="">
+                </div>
+                <div class="post-info">
+                    <a href="post.html" class="category">Travel</a>
+                    <h3 class="post-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
+                    <p class="post-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis assumenda velit reprehenderit nemo? Perferendis, distinctio corrupti cum nemo tempora illo consequuntur, velit eum tenetur quisquam, inventore nam. Quod, officia adipisci?
+                    Ut doloribus eveniet ipsa dolorem eligendi ea excepturi repudiandae est deleniti, blanditiis aliquid architecto enim velit maxime ad veritatis possimus vitae quaerat temporibus illum, dolores vero sapiente aut? </p>
+                    
+                    <div class="post-profile">
+                        <div class="post-profile-img">
+                            <img src="lu.png">
+                        </div>
+                        <div class="post-profile-info">
+                            <h5>Monkey D Luffy</h5>
+                            <small>August 10, 2024 - 8:42PM</small>
+                        </div>
+                    </div>
+                </div>
+
+<!-- ---------------------------------Comment Box------------------------------------- -->
+              
+                <div class="comment-section">
+                    <button class="like" id="likeBtn"><i class="fa-regular fa-heart"></i></button>
+                    <div id="likeCountDisplay">0</div>
+                    <button class="like" id="replyBtn"><i class="fa-regular fa-comment"></i></button>
+                    <div id="commentCountDisplay">0</div>
+                    <button class="like" id="shareBtn"><i class="fa-solid fa-share"></i></button>
+                </div>
+
+
+                <div class="modal-overlay" id="modalOverlay">
+                    <div class="popup-container">
+                        <div id="commentsList" class="comments-list"></div>
+                        <div class="form-wrapper">
+                            <form class="comment" id="newCommentForm">
+                                <input type="text" placeholder="Comment" class="comment-input" id="commentTextarea"></input>
+                                <button class="submit" type="submit"><i class="fa-regular fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="post1">
+                <div class="thumbnail">
+                    <img src="food.png" alt="">
+                </div>
+                <div class="post-info">
+                    <a href="post.html" class="category">Food</a>
+                    <h3 class="post-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
+                    <p class="post-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis assumenda velit reprehenderit nemo? Perferendis, distinctio corrupti cum nemo tempora illo consequuntur, velit eum tenetur quisquam, inventore nam. Quod, officia adipisci?
+                    Ut doloribus eveniet ipsa dolorem eligendi ea excepturi repudiandae est deleniti, blanditiis aliquid architecto enim velit maxime ad veritatis possimus vitae quaerat temporibus illum, dolores vero sapiente aut?</p>
+                    
+                    <div class="post-profile">
+                        <div class="post-profile-img">
+                            <img src="de.png">
+                        </div>
+                        <div class="post-profile-info">
+                            <h5>Denerys Targaryen</h5>
+                            <small>July 28, 2024 - 01:31PM</small>
+                        </div>
+                    </div>
+                </div>
+
+<!-- ---------------------------------Comment Box------------------------------------- -->
+              
+                <div class="comment-section">
+                    <button class="like" id="likeBtn"><i class="fa-regular fa-heart"></i></button>
+                    <div id="likeCountDisplay">0</div>
+                    <button class="like" id="replyBtn"><i class="fa-regular fa-comment"></i></button>
+                    <div id="commentCountDisplay">0</div>
+                    <button class="like" id="shareBtn"><i class="fa-solid fa-share"></i></button>
+                </div>
+
+
+                <div class="modal-overlay" id="modalOverlay">
+                    <div class="popup-container">
+                        <div id="commentsList" class="comments-list"></div>
+                        <div class="form-wrapper">
+                            <form class="comment" id="newCommentForm">
+                                <input type="text" placeholder="Comment" class="comment-input" id="commentTextarea"></input>
+                                <button class="submit" type="submit"><i class="fa-regular fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="post1">
+                <div class="thumbnail">
+                    <img src="art.png" alt="">
+                </div>
+                <div class="post-info">
+                    <a href="post.html" class="category">Art</a>
+                    <h3 class="post-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
+                    <p class="post-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis assumenda velit reprehenderit nemo? Perferendis, distinctio corrupti cum nemo tempora illo consequuntur, velit eum tenetur quisquam, inventore nam. Quod, officia adipisci?
+                    Ut doloribus eveniet ipsa dolorem eligendi ea excepturi repudiandae est deleniti, blanditiis aliquid architecto enim velit maxime ad veritatis possimus vitae quaerat temporibus illum, dolores vero sapiente aut?</p>
+                    
+                    <div class="post-profile">
+                        <div class="post-profile-img">
+                            <img src="nami.png">
+                        </div>
+                        <div class="post-profile-info">
+                            <h5>Cat Burglar Nami</h5>
+                            <small>July 19, 2024 - 10:01 AM</small>
+                        </div>
+                    </div>
+                </div>
+
+<!-- ---------------------------------Comment Box------------------------------------- -->
+              
+                <div class="comment-section">
+                    <button class="like" id="likeBtn"><i class="fa-regular fa-heart"></i></button>
+                    <div id="likeCountDisplay">0</div>
+                    <button class="like" id="replyBtn"><i class="fa-regular fa-comment"></i></button>
+                    <div id="commentCountDisplay">0</div>
+                    <button class="like" id="shareBtn"><i class="fa-solid fa-share"></i></button>
+                </div>
+
+
+                <div class="modal-overlay" id="modalOverlay">
+                    <div class="popup-container">
+                        <div id="commentsList" class="comments-list"></div>
+                        <div class="form-wrapper">
+                            <form class="comment" id="newCommentForm">
+                                <input type="text" placeholder="Comment" class="comment-input" id="commentTextarea"></input>
+                                <button class="submit" type="submit"><i class="fa-regular fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="post1">
+                <div class="thumbnail">
+                    <img src="mus.png" alt="">
+                </div>
+                <div class="post-info">
+                    <a href="post.html" class="category">Music</a>
+                    <h3 class="post-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
+                    <p class="post-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis assumenda velit reprehenderit nemo? Perferendis, distinctio corrupti cum nemo tempora illo consequuntur, velit eum tenetur quisquam, inventore nam. Quod, officia adipisci?
+                    Ut doloribus eveniet ipsa dolorem eligendi ea excepturi repudiandae est deleniti, blanditiis aliquid architecto enim velit maxime ad veritatis possimus vitae quaerat temporibus illum, dolores vero sapiente aut?</p>
+                    
+                    <div class="post-profile">
+                        <div class="post-profile-img">
+                            <img src="da.png">
+                        </div>
+                        <div class="post-profile-info">
+                            <h5>Daemon Targaryen</h5>
+                            <small>May 01, 2024 - 11:12 AM</small>
+                        </div>
+                    </div>
+                </div>
+
+<!-- ---------------------------------Comment Box------------------------------------- -->
+              
+                <div class="comment-section">
+                    <button class="like" id="likeBtn"><i class="fa-regular fa-heart"></i></button>
+                    <div id="likeCountDisplay">0</div>
+                    <button class="like" id="replyBtn"><i class="fa-regular fa-comment"></i></button>
+                    <div id="commentCountDisplay">0</div>
+                    <button class="like" id="shareBtn"><i class="fa-solid fa-share"></i></button>
+                </div>
+
+
+                <div class="modal-overlay" id="modalOverlay">
+                    <div class="popup-container">
+                        <div id="commentsList" class="comments-list"></div>
+                        <div class="form-wrapper">
+                            <form class="comment" id="newCommentForm">
+                                <input type="text" placeholder="Comment" class="comment-input" id="commentTextarea"></input>
+                                <button class="submit" type="submit"><i class="fa-regular fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="Category" id="Category">
+        <div class="category-container container">
+            <a class="category">Discovery</a>
+            <a class="category">Wild Life</a>
+            <a class="category">Food</a>
+            <a class="category">Sports</a>
+            <a class="category">Travel</a>
+            <a class="category">Music</a>
+            <a class="category">Photographt</a>
+            <a class="category">Fitness</a>
+            <a class="category">World</a>
+            <a class="category">Art</a>
+            <a class="category">Science & Tech</a>
+            <a class="category">Pets</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <div class="container foot-ontainer">
+            <article>
+                <h4>Categories</h4>
+                <ul>
+                    <li><a>Discovery</a></li>
+                    <li><a>Wild Life</a></li>
+                    <li><a>Food</a></li>
+                    <li><a>Sports</a></li>
+                    <li><a>Travel</a></li>
+                    <li><a>Music</a></li>
+                    <li><a>Photography</a></li>
+                    <li><a>Fitness</a></li>
+                    <li><a>World</a></li>
+                    <li><a>Art</a></li>
+                    <li><a>Science & Tech</a></li>
+                    <li><a>Pets</a></li>
+                    </ul>
+                </ul>
+            </article>
+
+            <article>
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="">Online Support</a></li>
+                    <li><a href="">Email</a></li>
+                    <li><a href="">Phone</a></li>
+                    <li><a href="">Social Media</a></li>
+                </ul>
+            </article>
+
+            <article>
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </article>
+
+        </div>
+        <div class="copyryt"><pre>Conditions of Use     Privacy Notice
+Copyright &copy; 2024, Blog.</pre></div>
+    </footer>
+
+    <script src="blog.js"></script>
+</body>
+</html>

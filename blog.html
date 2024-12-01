@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOT website</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="home.html" class="logo"><h3><span class="spa">B</span>log<span>.</span></h3></a>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Iot Devices.html">Iot Devices</a></li>
+                <li><a href="Iot Ideas.html">Iot Ideas</a></li>
+                <li><a href="contact.html">Contact</a></li>d
+       
+            </ul> 
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i> 
+        </div>
+    </nav>
+
+    
+    <section class="search-bar">
+        <a href="IOT DEVICE.html" class="IOT DEVICE">IOT DEVICE</a>
+        <form class="container search-container" onsubmit="return false;">
+            <div class="search">
+                <input id="search-input" placeholder="Search..." type="text" oninput="showSuggestions(this.value)">
+                <button type="submit">Go</button>
+            </div>
+            <div id="suggestions" class="suggestions"></div>
+        </form>
+        <a href="add-post.html" class="icn"><i class="fa-solid fa-plus"></i><span>Upload IOT Ideas</span></a>
+    </section>
+
+
+    <section class="post">
+        <div class="post-container container">
+
+            <article class="post1">
+                <div class="thumbnail">
+                    <img src="motoron.jpeg" alt="">
+                </div>
+                <div class="post-info">
+                    <a href="category.html" class="category">Motoron 2 controller</a>
+                    <h3 class="post-title">IOT MOTORON DEVICE </h3>
+                    <p class="post-body">The Motoron motor controllers are a family of general-purpose modules designed to control brushed DC motors. The Motoron receives commands via I²C or UART serial (depending on which model you have), so only two I/O lines are needed regardless of how many Motorons you connect.</p>
+                    
+                    <div class="post-profile">
+                        <div class="post-profile-img">
+                            <img src="de.png">
+                        </div>
+                        <div class="post-profile-info">
+                            <h5>Denerys Targaryen</h5>
+                            <small>July 28, 2024 - 01:31PM</small>
+                        </div>
+                    </div>
+                </div>
+
+<!-- ---------------------------------Comment Box------------------------------------- -->
+              
+                <div class="comment-section">
+                    <button class="like" id="likeBtn"><i class="fa-regular fa-heart"></i></button>
+                    <div id="likeCountDisplay">0</div>
+                    <button class="like" id="replyBtn"><i class="fa-regular fa-comment"></i></button>
+                    <div id="commentCountDisplay">0</div>
+                    <button class="like" id="shareBtn"><i class="fa-solid fa-share"></i></button>
+                </div>
+
+
+                <div class="modal-overlay" id="modalOverlay">
+                    <div class="popup-container">
+                        <div id="commentsList" class="comments-list"></div>
+                        <div class="form-wrapper">
+                            <form class="comment" id="newCommentForm">
+                                <input type="text" placeholder="Comment" class="comment-input" id="commentTextarea"></input>
+                                <button class="submit" type="submit"><i class="fa-regular fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="post1">
+                <div class="thumbnail">
+                    <img src="motoron.jpeg" alt="">
+                </div>
+                <div class="post-info">
+                    <a href="category.html" class="category">MOTORON 6 controllers</a>
+                    <h3 class="post-title">MOTORON DEVICE. </h3>
+                    <p class="post-body">The Motoron motor controllers are a family of general-purpose modules designed to control brushed DC motors. The Motoron receives commands via I²C or UART serial (depending on which model you have), so only two I/O lines are needed regardless of how many Motorons you connect.
+                 </p>
+                    
+                    <div class="post-profile">
+                        <div class="post-profile-img">
+                            <img src="nami.png">
+                        </div>
+                        <div class="post-profile-info">
+                            <h5>Cat Burglar Nami</h5>
+                            <small>July 19, 2024 - 10:01 AM</small>
+                        </div>
+                    </div>
+                </div>
+
+<!-- ---------------------------------Comment Box------------------------------------- -->
+              
+                <div class="comment-section">
+                    <button class="like" id="likeBtn"><i class="fa-regular fa-heart"></i></button>
+                    <div id="likeCountDisplay">0</div>
+                    <button class="like" id="replyBtn"><i class="fa-regular fa-comment"></i></button>
+                    <div id="commentCountDisplay">0</div>
+                    <button class="like" id="shareBtn"><i class="fa-solid fa-share"></i></button>
+                </div>
+
+
+                <div class="modal-overlay" id="modalOverlay">
+                    <div class="popup-container">
+                        <div id="commentsList" class="comments-list"></div>
+                        <div class="form-wrapper">
+                            <form class="comment" id="newCommentForm">
+                                <input type="text" placeholder="Comment" class="comment-input" id="commentTextarea"></input>
+                                <button class="submit" type="submit"><i class="fa-regular fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="post1">
+                <div class="thumbnail">
+                    <img src="biotron.jpeg" alt="">
+                </div>
+                <div class="post-info">
+                    <a href="category.html" class="category">BIOTRON 2 CONTROL SENSING</a>
+                    <h3 class="post-title">BIOTRON </h3>
+                    <p class="post-body">It is preferred that the object must be placed at the center line of the sensor but it can also be present at a certain angle from the center. This is known as effectual angle which should be less than 15°.
+                        The distance at which an object must be placed so that it can be detected by a sensor is around 2cm – 400 cm. The accuracy of detection decreases with an increase in distance.
+                        The sensor is used to emit waves known as ultrasound with a frequency of 40 KHz.
+                        Distance Measurement,Object Detection,Positioning and Navigation,Tank Level Monitoring,Collision Avoidance,Sound-absorbing materials are not detectable,Displacement.</p>
+                    
+                    <div class="post-profile">
+                        <div class="post-profile-img">
+                            <img src="da.png">
+                        </div>
+                        <div class="post-profile-info">
+                            <h5>Daemon Targaryen</h5>
+                            <small>May 01, 2024 - 11:12 AM</small>
+                        </div>
+                    </div>
+                </div>
+
+<!-- ---------------------------------Comment Box------------------------------------- -->
+              
+                <div class="comment-section">
+                    <button class="like" id="likeBtn"><i class="fa-regular fa-heart"></i></button>
+                    <div id="likeCountDisplay">0</div>
+                    <button class="like" id="replyBtn"><i class="fa-regular fa-comment"></i></button>
+                    <div id="commentCountDisplay">0</div>
+                    <button class="like" id="shareBtn"><i class="fa-solid fa-share"></i></button>
+                </div>
+
+
+                <div class="modal-overlay" id="modalOverlay">
+                    <div class="popup-container">
+                        <div id="commentsList" class="comments-list"></div>
+                        <div class="form-wrapper">
+                            <form class="comment" id="newCommentForm">
+                                <input type="text" placeholder="Comment" class="comment-input" id="commentTextarea"></input>
+                                <button class="submit" type="submit"><i class="fa-regular fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="post1">
+                <div class="thumbnail">
+                    <img src="wateron.jpeg" alt="">
+                </div>
+                <div class="post-info">
+                    <a href="category.html" class="category">FLOW SENSOR SINGLE </a>
+                    <h3 class="post-title">WATER FLOW SENSOR </h3>
+                    <p class="post-body">Water flow sensors can measure the rate of flow of water either by measuring velocity or displacement. These sensors can also measure the flow of water like fluids such as measuring milk in a dairy industry etc…
+                    There are various types of water flow sensors available based on their diameter and method of measuring. A cost-effective and most commonly used water flow sensor is Paddlewheel sensor. It can be used with water-like fluids </p>
+                     
+                    <div class="post-profile">
+                        <div class="post-profile-img">
+                            <img src="arya1.png">
+                        </div>
+                        <div class="post-profile-info">
+                            <h5>Arya Stark</h5>
+                            <small>October 20, 2024 - 7:22PM</small>
+                        </div>
+                    </div>
+                </div>
+
+<!-- ---------------------------------Comment Box------------------------------------- -->
+              
+                <div class="comment-section">
+                    <button class="like" id="likeBtn"><i class="fa-regular fa-heart"></i></button>
+                    <div id="likeCountDisplay">0</div>
+                    <button class="like" id="replyBtn"><i class="fa-regular fa-comment"></i></button>
+                    <div id="commentCountDisplay">0</div>
+                    <button class="like" id="shareBtn"><i class="fa-solid fa-share"></i></button>
+                </div>
+
+
+                <div class="modal-overlay" id="modalOverlay">
+                    <div class="popup-container">
+                        <div id="commentsList" class="comments-list"></div>
+                        <div class="form-wrapper">
+                            <form class="comment" id="newCommentForm">
+                                <input type="text" placeholder="Comment" class="comment-input" id="commentTextarea"></input>
+                                <button class="submit" type="submit"><i class="fa-regular fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="post1">
+                <div class="thumbnail">
+                    <img src="wateron.jpeg" alt="">
+                </div>
+                <div class="post-info">
+                    <a href="category.html" class="category">FLOW SENSOR DOUBLE</a>
+                    <h3 class="post-title"> WATER SENSOR</h3>
+                    <p class="post-body">Water flow sensors can measure the rate of flow of water either by measuring velocity or displacement. These sensors can also measure the flow of water like fluids such as measuring milk in a dairy industry etc…
+
+                        There are various types of water flow sensors available based on their diameter and method of measuring. A cost-effective and most commonly used water flow sensor is Paddlewheel sensor. It can be used with water-like fluids </p>
+                    
+                    <div class="post-profile">
+                        <div class="post-profile-img">
+                            <img src="sn.png">
+                        </div>
+                        <div class="post-profile-info">
+                            <h5>John Snow</h5>
+                            <small>August 14, 2024 - 9:02PM</small>
+                        </div>
+                    </div>
+                </div>
+
+<!-- ---------------------------------Comment Box------------------------------------- -->
+              
+                <div class="comment-section">
+                    <button class="like" id="likeBtn"><i class="fa-regular fa-heart"></i></button>
+                    <div id="likeCountDisplay">0</div>
+                    <button class="like" id="replyBtn"><i class="fa-regular fa-comment"></i></button>
+                    <div id="commentCountDisplay">0</div>
+                    <button class="like" id="shareBtn"><i class="fa-solid fa-share"></i></button>
+                </div>
+
+
+                <div class="modal-overlay" id="modalOverlay">
+                    <div class="popup-container">
+                        <div id="commentsList" class="comments-list"></div>
+                        <div class="form-wrapper">
+                            <form class="comment" id="newCommentForm">
+                                <input type="text" placeholder="Comment" class="comment-input" id="commentTextarea"></input>
+                                <button class="submit" type="submit"><i class="fa-regular fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="post1">
+                <div class="thumbnail">
+                    <img src="homeautomation.jpeg" alt="">
+                </div>
+                    <article class="post1">
+                        <div class="thumbnail">
+                            <img src="homeautomation1.jpg" alt="">
+                </div>
+                <div class="post-info">
+                    <a href="category.html" class="category">HOME AUTOMATION</a>
+                    <h3 class="post-title">IOT HOME AUTOMATION</h3>
+                    <p class="post-body">When connected with the Internet, home devices are an important constituent of the Internet of Things (“IoT”). In this Home Automation System, we will control 4 home appliances as Tv, Fan, Bulb, Motor, Refrigerator connected to Relay using Blynk Application.
+                        Compatibility and Integration: One challenge in IoT home automation lies in the compatibility and integration of different devices and technologies. With a wide range of manufacturers and communication protocols, ensuring seamless connectivity and interoperability between devices can be complex.
+                    </p>
+                    
+                    <div class="post-profile">
+                        <div class="post-profile-img">
+                            <img src="lu.png">
+                        </div>
+                        <div class="post-profile-info">
+                            <h5>Monkey D Luffy</h5>
+                            <small>August 10, 2024 - 8:42PM</small>
+                        </div>
+                    </div>
+                </div>
+
+<!-- ---------------------------------Comment Box------------------------------------- -->
+              
+                <div class="comment-section">
+                    <button class="like" id="likeBtn"><i class="fa-regular fa-heart"></i></button>
+                    <div id="likeCountDisplay">0</div>
+                    <button class="like" id="replyBtn"><i class="fa-regular fa-comment"></i></button>
+                    <div id="commentCountDisplay">0</div>
+                    <button class="like" id="shareBtn"><i class="fa-solid fa-share"></i></button>
+                </div>
+
+
+                <div class="modal-overlay" id="modalOverlay">
+                    <div class="popup-container">
+                        <div id="commentsList" class="comments-list"></div>
+                        <div class="form-wrapper">
+                            <form class="comment" id="newCommentForm">
+                                <input type="text" placeholder="Comment" class="comment-input" id="commentTextarea"></input>
+                                <button class="submit" type="submit"><i class="fa-regular fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="Category" id="Category">
+        <div class="category-container container">
+            <a class="category">MOTORON 2 controller</a>
+            <a class="category">MOTORON 6 controller</a>
+            <a class="category">BIOTRON 2 CONTROL SENSING</a>
+            <a class="category">FLOW SENSOR SINGLE</a>
+            <a class="category">FLOW SENSOR DOUBLE</a>
+            <a class="category">SMART HOME AUTOMATION</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <div class="container foot-ontainer">
+            <article>
+                <h4>Categories</h4>
+                <ul>
+                    <li><a>Discovery</a></li>
+                    <li><a>Wild Life</a></li>
+                    <li><a>Food</a></li>
+                    <li><a>Sports</a></li>
+                    <li><a>Travel</a></li>
+                    <li><a>Music</a></li>
+                    <li><a>Photography</a></li>
+                    <li><a>Fitness</a></li>
+                    <li><a>World</a></li>
+                    <li><a>Art</a></li>
+                    <li><a>Science & Tech</a></li>
+                    <li><a>Pets</a></li>
+                    </ul>
+                </ul>
+            </article>
+
+            <article>
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="">Online Support</a></li>
+                    <li><a href="">Email</a></li>
+                    <li><a href="">Phone</a></li>
+                    <li><a href="">Social Media</a></li>
+                </ul>
+            </article>
+
+            <article>
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </article>
+
+        </div>
+        <div class="copyryt"><pre>Conditions of Use     Privacy Notice
+Copyright &copy; 2024, Blog.</pre></div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="blog.js"></script>
+</body>
+</html>
